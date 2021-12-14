@@ -29,4 +29,20 @@ export default defineMessages({
     id: `${scope}.tryme.atPrefix`,
     defaultMessage: '@',
   },
+  numericalLabel: {
+    id: `app.containers.HomePage.numerical.label`,
+    defaultMessage: "Numerical Input"
+  },
+  inputUnitLabel: {
+    id: `app.containers.HomePage.InputUnit.label`,
+    defaultMessage: "Unit Input"
+  },
+  targetUnitLabel: {
+    id: `app.containers.HomePage.TargetUnit.label`,
+    defaultMessage: "Target Unit"
+  },
+  responseUnitLabel: {
+    id: `app.containers.HomePage.response.label`,
+    defaultMessage: "Response"
+  }
 });

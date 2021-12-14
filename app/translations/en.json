@@ -27,5 +27,9 @@
   "boilerplate.containers.HomePage.tryme.message": "Show Github repositories by",
   "boilerplate.containers.LocaleToggle.de": "de",
   "boilerplate.containers.LocaleToggle.en": "en",
-  "boilerplate.containers.NotFoundPage.header": "Page not found."
+  "boilerplate.containers.NotFoundPage.header": "Page not found.",
+  "app.containers.HomePage.numerical.label": "Numerical Value",
+  "app.containers.HomePage.InputUnit.label": "Input Unit Value",
+  "app.containers.HomePage.TargetUnit.label": "Target Unit Value",
+  "app.containers.HomePage.response.label": "Response"
 }

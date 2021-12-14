@@ -42,6 +42,10 @@ export function HomePage({
   repos,
   onSubmitForm,
   onChangeUsername,
+  numerical,
+  inputUnit,
+  targetUnit,
+  response
 }) {
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
@@ -76,11 +80,8 @@ export function HomePage({
           </p>
         </CenteredSection>
         <Section>
-          <H2>
-            <FormattedMessage {...messages.trymeHeader} />
-          </H2>
           <Form onSubmit={onSubmitForm}>
-            <label htmlFor="username">
+            {/* <label htmlFor="username">
               <FormattedMessage {...messages.trymeMessage} />
               <AtPrefix>
                 <FormattedMessage {...messages.trymeAtPrefix} />
@@ -88,13 +89,61 @@ export function HomePage({
               <Input
                 id="username"
                 type="text"
-                placeholder="mxstbr"
+                placeholder="Numerical Value"
                 value={username}
                 onChange={onChangeUsername}
               />
-            </label>
+            </label> */}
           </Form>
-          <ReposList {...reposListProps} />
+          <div>
+            <FormattedMessage {...messages.numericalLabel} />
+              <label htmlFor='numerical'>
+                <Input
+                      id="numerical"
+                      type="number"
+                      placeholder="Numerical Value"
+                      value={username}
+                      onChange={onChangeUsername}
+                />
+              </label>
+            </div>
+          <div>
+            <FormattedMessage {...messages.inputUnitLabel} />
+              <label htmlFor='inputUnit'>
+                <Input
+                      id="inputUnit"
+                      type="text"
+                      placeholder="Input - Unit Of Measure"
+                      value={username}
+                      onChange={onChangeUsername}
+                />
+              </label>
+          </div>
+          <div>
+            <FormattedMessage {...messages.targetUnitLabel} />
+              <label htmlFor='targetUnit'>
+                <Input
+                      id="targetUnit"
+                      type="text"
+                      placeholder="Target - Unit of Measure"
+                      value={username}
+                      onChange={onChangeUsername}
+                />
+              </label>
+          </div>
+          <div>
+            <FormattedMessage {...messages.responseUnitLabel} />
+              <label htmlFor='responseUnit'>
+                <Input
+                      id="responseUnit"
+                      type="text"
+                      placeholder="Response"
+                      value={username}
+                      onChange={onChangeUsername}
+                />
+              </label>
+          </div>
+          {/* <ReposList {...reposListProps} /> */}
         </Section>
       </div>
     </article>
